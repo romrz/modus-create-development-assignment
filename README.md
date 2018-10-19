@@ -1,7 +1,8 @@
 # Modus Create Development Assignment
 *Created by Romario Ramirez.*
 
-## Installation & running
+## Installation & Running
+*In order to correctly install and run this project, type the following on the terminal.*
 * git clone https://github.com/romrz/modus-create-development-assignment.git
 * composer install
 * php artisan serve --host=localhost --port:8080 *(Starts the server on the url: http://localhost:8080)*
