@@ -1,6 +1,11 @@
 # Modus Create Development Assignment
 *Created by Romario Ramirez.*
 
+## Prerequisites
+Created with:
+* **PHP 7.2.11**
+* **Laravel 5.7**
+
 ## Installation & Running
 *In order to correctly install and run this project, type the following on the terminal.*
 * git clone https://github.com/romrz/modus-create-development-assignment.git
