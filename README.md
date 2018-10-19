@@ -4,8 +4,11 @@
 ## Installation & Running
 *In order to correctly install and run this project, type the following on the terminal.*
 * git clone https://github.com/romrz/modus-create-development-assignment.git
+* cd modus-create-development-assignment
 * composer install
-* php artisan serve --host=localhost --port:8080 *(Starts the server on the url: http://localhost:8080)*
+* cp .env.example .env
+* php artisan key:generate
+* php artisan serve --host=localhost --port=8080 *(Starts the server on the url: http://localhost:8080)*
 
 ## Important Files
 The only relevant files to this particular assignment are the following:
