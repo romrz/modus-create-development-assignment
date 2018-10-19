@@ -15,9 +15,13 @@ class VehiclesController extends Controller
      * @param string $model 
      * @return Illuminate\Http\Response
      */
-    public function index($year, $manufacturer, $model)
+    public function index(Request $request)
     {
-        $response = $this->makeRequest($year, $manufacturer, $model);
+        $response = $this->makeRequest(
+            $request->modelYear,
+            $request->manufacturer,
+            $request->model
+        );
         $response = $this->transformResponse($response);
 
         return response()->json($response, 200);

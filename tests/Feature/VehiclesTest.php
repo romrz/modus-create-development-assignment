@@ -43,4 +43,29 @@ class VehiclesTest extends TestCase
             ]);
     }
 
+    /**
+     * Requirement #2 Test
+     * @test
+     */
+    public function it_retrieves_a_list_of_vehicles_passing_body_parameters()
+    {
+        $response = $this->json('POST', '/vehicles', [
+            'modelYear' => 2015,
+            'manufacturer' => 'Audi',
+            'model' => 'A3'
+        ]);
+
+        $response
+            ->assertStatus(200)
+            ->assertJsonStructure([
+                'Count',
+                'Results' => [
+                    '*' => [
+                        'Description',
+                        'VehicleId'
+                    ]
+                ]
+            ]);
+    }
+
 }
